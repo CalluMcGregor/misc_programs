@@ -6,8 +6,9 @@ def click_mouse():
     minutes_passed = 0
     time_limit = input("Enter the number of minutes you want your computer to stay active: ")
     time_limit = int(time_limit)
+    print("Starting")
     while minutes_passed < time_limit:
-        pyautogui.click(None, None)
+        pyautogui.press('f13')
         time.sleep(60)
         minutes_passed += 1
         print(minutes_passed)
