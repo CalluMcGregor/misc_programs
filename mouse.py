@@ -1,6 +1,8 @@
 import time
 import pyautogui
 
+#TODO add a noise when time is up
+
 def click_mouse():
     """function that clicks mouse every 60 seconds for user defined minutes"""
     minutes_passed = 0
