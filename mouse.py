@@ -3,6 +3,7 @@ import pyautogui
 import sys
 
 #TODO add a noise when time is up
+#TODO add progress bar/better time tracking
 
 def click_mouse():
     """function that clicks mouse every 60 seconds for user defined minutes"""
@@ -17,6 +18,6 @@ def click_mouse():
         pyautogui.press('f13')
         time.sleep(60)
         minutes_passed += 1
-        print(minutes_passed)
+        print(f"Minute: {minutes_passed}")
 
 click_mouse()
