@@ -1,6 +1,8 @@
 import time
 import pyautogui
 import sys
+from rich.console import Console
+from rich.panel import Panel
 
 #TODO add a noise when time is up
 #TODO add progress bar/better time tracking
