@@ -1,8 +1,7 @@
 import time
 import pyautogui
 import sys
-from rich.console import Console
-from rich.panel import Panel
+from rich.progress import track
 
 #TODO add a noise when time is up
 #TODO add progress bar/better time tracking
@@ -15,11 +14,10 @@ def click_mouse():
     else:
         active_duration = int(input("Enter an integer for the number of minutes: "))
 
-    print(f"Keeping your laptop active for: {active_duration} minutes.")
-    while minutes_passed < active_duration:
+    print(f"Keeping your laptop active for: {active_duration} minutes. Progress is shown below.")
+    for minute in track(range(active_duration)):
         pyautogui.press('f13')
         time.sleep(60)
         minutes_passed += 1
-        print(f"Minute: {minutes_passed}")
 
 click_mouse()
