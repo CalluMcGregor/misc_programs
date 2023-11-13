@@ -4,7 +4,6 @@ import sys
 from rich.progress import track
 
 #TODO add a noise when time is up
-#TODO add progress bar/better time tracking
 
 def click_mouse():
     """function that clicks mouse every 60 seconds for user defined minutes"""
